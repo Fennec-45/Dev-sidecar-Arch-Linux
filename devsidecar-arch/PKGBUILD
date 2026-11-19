@@ -1,7 +1,7 @@
 #Maintainer: Fennec <1964558776@qq.com>
 _upstream=DevSidecar
 pkgname=devsidecar-bin
-pkgver=2.3.2
+pkgver=2.3.5
 pkgrel=1
 epoch=
 pkgdesc="DevSidecar的Arch Linux支持"
@@ -88,9 +88,9 @@ backup=()
 options=('!strip')
 install=
 changelog=
-source=("${_upstream}-$pkgver-linux-x86_64.tar.gz::https://github.com/docmirror/dev-sidecar/releases/download/v2.3.2/DevSidecar-2.3.2-linux-x86_64.tar.gz")
+source=("${_upstream}-$pkgver-linux-x86_64.tar.gz::https://github.com/docmirror/dev-sidecar/releases/download/v$pkgver/DevSidecar-$pkgver-linux-x86_64.tar.gz")
 noextract=()
-sha256sums=('46e33498b0dac8da852b9c2cee785bdbeae1ba89ef8f7a26ec5c53e5238c2a10')
+sha256sums=('a60b4f04c56d7e41fe31a5855dabf8adff68196937a4ce28f8630b1666e0ab8b')
 validpgpkeys=()
 package() {
     cd "$srcdir/$_upstream-$pkgver-x64"
@@ -113,7 +113,7 @@ package() {
     install -Dm644 "$pkgname.desktop" \
         "$pkgdir/usr/share/applications/dev-sidecar.desktop"
 
-    install -Dm644 "resources/extra/icons/tray-icon.png" \
+    install -Dm644 "resources/extra/icons/256x256.png" \
         "$pkgdir/usr/share/icons/hicolor/256x256/apps/dev-sidecar.png"
 
 
