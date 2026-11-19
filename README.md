@@ -1,5 +1,5 @@
-# Dev-sidecar-2.3.2-Arch-Linux
-Dev-Sidecar 2.3.2 x64的Arch Linux用PKGBUILD文件  
+# Dev-sidecar-Arch-Linux
+Dev-Sidecar x64的Arch Linux用PKGBUILD文件  
 原作者仓库链接：https://github.com/docmirror/dev-sidecar/
 ## 如何使用
 使用git clone克隆本仓库：
@@ -8,7 +8,7 @@ git clone https://github.com/Fennec-45/Dev-sidecar-2.3.2-Arch-Linux.git
 ```
 然后，cd到“devsidecar-arch”目录后执行makepkg -si：
 ```
-cd Dev-sidecar-2.3.2-Arch-Linux
+cd Dev-sidecar-Arch-Linux
 cd devsidecar-arch
 makepkg -si
 ```
