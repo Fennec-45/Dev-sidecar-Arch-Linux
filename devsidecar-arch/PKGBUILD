@@ -90,7 +90,7 @@ install=
 changelog=
 source=("${_upstream}-$pkgver-linux-x86_64.tar.gz::https://github.com/docmirror/dev-sidecar/releases/download/v$pkgver/DevSidecar-$pkgver-linux-x86_64.tar.gz")
 noextract=()
-sha256sums=('46e33498b0dac8da852b9c2cee785bdbeae1ba89ef8f7a26ec5c53e5238c2a10')
+sha256sums=('a60b4f04c56d7e41fe31a5855dabf8adff68196937a4ce28f8630b1666e0ab8b')
 validpgpkeys=()
 package() {
     cd "$srcdir/$_upstream-$pkgver-x64"
